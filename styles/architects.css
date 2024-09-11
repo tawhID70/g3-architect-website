@@ -127,7 +127,20 @@
     /* padding-bottom: 0; */
     
   }
-  
+  #experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+  #experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .features-architect img {
+    width: 100%;
+  }
   /* some facts related style */
   .facts-container {
     display: grid;
@@ -169,12 +182,24 @@
   .sponsor-companies {
     filter: grayscale(100%);
   }
+  .footer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .footer-title {
+    padding: 38px 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
 
   /* resonsive media query */
   @media screen and (max-width: 576px) {
     .navbar, 
     .nav-links,
-    .teams {
+    .features,
+    .teams,
+    .footer-title
+     {
       flex-direction: column;
     }
     .team-img-container,
@@ -195,6 +220,10 @@
       gap: 50px;
     }
     .our-features {
+      margin-left: 20px;
+    }
+    #experience-badge{
+      margin-top: 20px;
       margin-left: 20px;
     }
   }
